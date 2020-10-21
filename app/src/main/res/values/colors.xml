@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="darkBlue">#00a8cc</color>
+    <color name="colorPrimaryDark">#222831</color>
+    <color name="colorPrimary">#393e46</color>
+    <color name="colorAccent">#00adb5</color>
+    <color name="white">#eeeeee</color>
+
+    <color name="purple">#381460</color>
+    <color name="laborator">#65587f</color>
+    <color name="seminar">#fe346e</color>
+    <color name="curs">#29c7ac</color>
+</resources>

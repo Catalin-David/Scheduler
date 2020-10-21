@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Insert entry"
+        android:id="@+id/insert"
+        android:icon="@drawable/ic_insert"/>
+    <item
+        android:title="Go to next week"
+        android:id="@+id/next_week"
+        android:icon="@drawable/ic_next_week"/>
+    <item
+        android:title="Go to previous week"
+        android:id="@+id/prev_week"
+        android:icon="@drawable/ic_prev_week"/>
+    <item
+        android:title="Help"
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help"/>
+</menu>

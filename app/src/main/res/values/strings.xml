@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_closed">drawer_closed</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+
+    <array name="weekdays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </array>
+
+    <array name="tip">
+        <item>Curs</item>
+        <item>Seminar</item>
+        <item>Laborator</item>
+    </array>
+
+    <array name="week">
+        <item>Weekly</item>
+        <item>Sapt1</item>
+        <item>Sapt2</item>
+    </array>
+</resources>

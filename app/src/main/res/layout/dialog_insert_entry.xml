@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <EditText
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of subject"
+        android:id="@+id/subjectName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subjectName"
+        android:layout_marginTop="5dp"
+        android:hint="Name of teacher"
+        android:id="@+id/teacherName"/>
+
+    <EditText
+        android:id="@+id/subjectRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/teacherName"
+        android:hint="Room id"
+        android:layout_marginTop="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subjectRoom"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:entries="@array/tip"
+        android:orientation="horizontal"/>
+
+    <Spinner
+        android:id="@+id/spinnerWeek"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/spinnerTip"
+        app:layout_constraintStart_toEndOf="@id/spinnerTip"
+        android:entries="@array/week"/>
+
+    <Spinner
+        android:orientation="horizontal"
+        android:id="@+id/spinnerDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/spinnerTip"
+        app:layout_constraintStart_toEndOf="@id/spinnerWeek"
+        android:entries="@array/weekdays"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinnerWeek"
+        android:hint="00"
+        android:id="@+id/startHour"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/startHour"
+        app:layout_constraintStart_toEndOf="@id/startHour"
+        android:text=" -- "
+        android:layout_marginTop="15dp"
+        android:id="@+id/linie"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/startHour"
+        app:layout_constraintStart_toEndOf="@id/linie"
+        android:hint="00"
+        android:id="@+id/endHour"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startHour"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Add entry"
+        android:textAllCaps="false"
+        android:id="@+id/btnAddEntry"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
